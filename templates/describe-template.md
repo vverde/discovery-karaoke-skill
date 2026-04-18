@@ -34,7 +34,7 @@ Render as a box-drawn card using Unicode box characters. Keep total width ~66 ch
 ## Full Mode (config: output_mode = standard, or `full` suffix used)
 
 ```
-# 🔍 [M##: Method Name]
+# [M##: Method Name]
 
 **[One-line description of what this method is and what it produces]**
 
@@ -82,7 +82,7 @@ Render as a box-drawn card using Unicode box characters. Keep total width ~66 ch
 
 ---
 
-## 🤖 AI Augmentation
+## AI Augmentation
 
 | Task | AI Can Help | AI Cannot Replace |
 |------|------------|-------------------|

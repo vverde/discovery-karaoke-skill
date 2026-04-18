@@ -26,7 +26,7 @@ Not sure where to start?
   Run the diagnostic:        /discovery-karaoke diagnose
 
 Available commands:
-  about | assess | quick | ai | list | describe | compare
+  about | assess | quick | plan | ai | list | describe | compare
   matrix | diagnose | review | config
 
 Type /discovery-karaoke help commands for the full reference.
@@ -40,9 +40,10 @@ Discovery Karaoke Prevention Engine — Command Reference
   about                      Framework, toolkit, credits, guardrails
   assess [situation]         Full recommendation — context questions → matched methods → plan
   quick [situation]          Fast recommendation — 4 questions → top methods
+  plan [situation]           Full discovery arc — Explore → Validate → Optimize stages + decision gates
   ai [situation]             AI product discovery — M89/M91/M90 sequence + guardrails
   list methods [filter]      Browse methods by risk, stage, category, or constraint
-  list methods all           Show all 80 active methods
+  list methods all           Show all 69 active methods (context tools: list tools)
   list tools                 Browse 11 context tools
   describe [M##]             Deep-dive on a specific method or context tool
   compare [M##] vs [M##]     Side-by-side comparison of two methods
@@ -62,6 +63,7 @@ List filters: risk, stage, category (generative/evaluative/experimentation/analy
 Examples:
   /discovery-karaoke assess We're considering a self-serve tier for SMBs
   /discovery-karaoke quick Should we add dark mode to the dashboard?
+  /discovery-karaoke plan We're adding an AI writing assistant to our B2B product
   /discovery-karaoke ai We're building an AI-powered document summarizer
   /discovery-karaoke list methods value B2B
   /discovery-karaoke list methods compliance validate
@@ -73,5 +75,5 @@ Examples:
   /discovery-karaoke review We interview users, then prototype, then usability test
 
 Framework: The Thinking Lens — the-thinking-lens.com
-Toolkit: 80 methods + 11 context tools | 11 anti-patterns | 11 guardrails
+Toolkit: 80 active entries (69 methods + 11 context tools) | 12 anti-patterns | 11 guardrails
 ```

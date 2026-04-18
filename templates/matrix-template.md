@@ -7,7 +7,7 @@ Use this template for the `matrix` command. Four modes — use the matching sect
 ## Mode 1: Compact Overview (no args)
 
 ```
-# 📊 Discovery Method Matrix
+# Discovery Method Matrix
 
 > Top methods per cell. Pick your risk, find your stage, start there.
 
@@ -42,7 +42,7 @@ Risks: `value` | `usability` | `feasibility` | `viability` | `compliance`
 ## Mode 2: Full Matrix (matrix full)
 
 ```
-# 📊 Discovery Method Matrix — Full
+# Discovery Method Matrix — Full
 
 ---
 
@@ -107,7 +107,7 @@ Risks: `value` | `usability` | `feasibility` | `viability` | `compliance`
 ## Mode 3: Full Row (matrix [risk])
 
 ```
-# 📊 [Risk Name] — All Stages
+# [Risk Name] — All Stages
 
 *[Risk question]*
 
@@ -121,7 +121,7 @@ Risks: `value` | `usability` | `feasibility` | `viability` | `compliance`
 
 ## Quick Picks by Constraint
 
-**⚡ Urgent + Low budget** (days, minimal spend):
+**Urgent + Low budget** (days, minimal spend):
 - Explore: [M## Name] · [M## Name]
 - Validate: [M## Name] · [M## Name]
 - Optimize: [M## Name] · [M## Name]
@@ -131,12 +131,12 @@ Risks: `value` | `usability` | `feasibility` | `viability` | `compliance`
 - Validate: [M## Name] · [M## Name]
 - Optimize: [M## Name] · [M## Name]
 
-**🏢 B2B specific**:
+**B2B specific**:
 - Explore: [M## Name] · [M## Name]
 - Validate: [M## Name] · [M## Name]
 - Optimize: [M## Name] · [M## Name]
 
-**🚀 Pre-launch** (no existing product/users):
+**Pre-launch** (no existing product/users):
 - Explore: [M## Name] · [M## Name]
 - Validate: [M## Name] · [M## Name]
 
@@ -153,7 +153,7 @@ Drill into a cell: `matrix [risk] explore` | `matrix [risk] validate` | `matrix 
 ## Mode 4: Single Cell (matrix [risk] [stage])
 
 ```
-# 📊 [Risk Name] × [Stage] — All Methods
+# [Risk Name] × [Stage] — All Methods
 
 *[Risk question] at [Stage] stage.*
 
@@ -166,10 +166,10 @@ Drill into a cell: `matrix [risk] explore` | `matrix [risk] validate` | `matrix 
 
 ## Quick Picks by Constraint
 
-**⚡ Urgent + Low budget**: [M## Name] · [M## Name]
+**Urgent + Low budget**: [M## Name] · [M## Name]
 **🚫 No user access**: [M## Name] · [M## Name]
-**🏢 B2B**: [M## Name] · [M## Name]
-**🚀 Pre-launch**: [M## Name] · [M## Name]
+**B2B**: [M## Name] · [M## Name]
+**Pre-launch**: [M## Name] · [M## Name]
 
 ---
 
@@ -192,4 +192,4 @@ Drill into a cell: `matrix [risk] explore` | `matrix [risk] validate` | `matrix 
 3. Mode 3: always include all 4 constraint scenarios from the data file
 4. Mode 4: always include the karaoke watch warning
 5. Footer on every mode — both the assess offer AND the evidence threshold reminder
-6. Constraint icons (⚡🚫🏢🚀) make the quick picks section scannable
+6. Constraint labels (Urgent, No user access, B2B, Pre-launch) make the quick picks section scannable — 🚫 kept for "No user access" semantic meaning

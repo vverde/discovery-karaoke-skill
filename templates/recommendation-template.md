@@ -7,7 +7,7 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 ## Template
 
 ```
-# 🎯 Discovery Recommendation: [User's Decision/Question]
+# Discovery Recommendation: [User's Decision/Question]
 
 ## Context Summary
 - **Decision**: [What they're trying to decide]
@@ -69,7 +69,7 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 
 ---
 
-## 📊 Evidence Convergence Map
+## Evidence Convergence Map
 
 | Signal | Method 1 | Method 2 | Method 3 |
 |--------|----------|----------|----------|
@@ -82,7 +82,7 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 
 ---
 
-## 🤖 AI Acceleration Opportunities
+## AI Acceleration Opportunities
 
 | Task | AI Can Help | AI Cannot Replace |
 |------|------------|-------------------|

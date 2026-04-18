@@ -77,3 +77,25 @@ Methods sourced from established product discovery literature: Teresa Torres, Ma
 ## License
 
 [CC BY 4.0](LICENSE) — free to use, share, and adapt with attribution to Amodiovalerio Verde / The Thinking Lens.
+
+---
+
+## Claude Code Skill
+
+This repository also contains a Claude Code skill (`SKILL.md`) that brings the same framework into the terminal as a 13-command interactive advisor.
+
+**Commands**: `assess` · `quick` · `plan` · `ai` · `list` · `describe` · `compare` · `matrix` · `diagnose` · `review` · `config` · `about` · `help`
+
+**Architecture**:
+- `SKILL.md` — command router + 11 guardrails + framework reference
+- `commands/` — one `.md` spec per command (loaded on demand)
+- `templates/` — output card formats per command
+- `data/` — source DB (`discovery-methods-full.md`), lite index (`methods-index.md`), matrix, anti-patterns, AI guardrails, constants
+- `local/` — `generate_index.py` regenerates the lite index from the source DB
+
+To regenerate the methods index after editing the source DB:
+
+```bash
+cd ~/Projects/discovery-karaoke-skill
+python3 local/generate_index.py
+```

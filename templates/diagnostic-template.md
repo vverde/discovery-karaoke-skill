@@ -13,18 +13,9 @@ Use this template for the `diagnose` command. Interactive karaoke diagnostic sco
 
 | # | Question | Score |
 |---|----------|-------|
-| 1 | We use the same 2-3 discovery methods for most initiatives | [0-3] |
-| 2 | Our discovery process is the same regardless of the risk type | [0-3] |
-| 3 | We can't explain WHY we chose a particular method (vs. alternatives) | [0-3] |
-| 4 | We default to interviews when we're unsure what to do | [0-3] |
-| 5 | Our discovery findings rarely surprise us | [0-3] |
-| 6 | We treat compliance/ethics as a checkbox, not a first-class risk | [0-3] |
-| 7 | We don't adjust evidence thresholds based on bet size | [0-3] |
-| 8 | Our "discovery" is mainly about building confidence, not reducing uncertainty | [0-3] |
-| 9 | We skip or delay discovery when timelines are tight | [0-3] |
-| 10 | We use the same discovery process we used 2+ years ago | [0-3] |
+| 1-12 | [Read the 12 diagnostic questions from `data/anti-patterns.md` — section "Diagnostic: Are You Doing Discovery Karaoke?". Use the exact question text from that file, not from this template. This prevents drift when questions are updated.] | [0-3 each] |
 
-**Total: [X] / 30**
+**Total: [X] / 36**
 
 ---
 
@@ -32,10 +23,10 @@ Use this template for the `diagnose` command. Interactive karaoke diagnostic sco
 
 ### [Band name based on score]
 
-- **0-8: Deliberate Discovery** — You're matching methods to risks. Keep it up. Watch for creeping defaults.
-- **9-15: Mild Karaoke** — Some defaults creeping in. Review your method selection for the top 2-3 questions you scored highest on.
-- **16-21: Significant Karaoke** — Time to rebuild your risk-to-method mapping. Your process has become the default.
-- **22-30: Full Karaoke** — Your discovery process needs a fundamental rethink. Start with the 30-minute recovery exercise below.
+- **0-10: Deliberate Discovery** — You're matching methods to risks. Keep it up. Watch for creeping defaults.
+- **11-18: Mild Karaoke** — Some defaults creeping in. Review your method selection for the top 2-3 questions you scored highest on.
+- **19-25: Significant Karaoke** — Time to rebuild your risk-to-method mapping. Your process has become the default.
+- **26-36: Full Karaoke** — Your discovery process needs a fundamental rethink. Start with the 30-minute recovery exercise below.
 
 ---
 

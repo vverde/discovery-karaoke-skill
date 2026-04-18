@@ -9,6 +9,7 @@
 
 **Data files**:
 - `data/risk-method-matrix.md`
+- `data/methods-index.md` — method names and metadata for selected methods
 - `data/anti-patterns.md` — for G6 named anti-pattern check
 - `templates/quick-template.md`
 

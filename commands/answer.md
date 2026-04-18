@@ -2,6 +2,11 @@
 
 **Trigger**: Smart fallback — classified as a framework question.
 
+**No question provided**: Apply G11:
+> "Ask a question about the framework and I'll answer it.
+> Example: `answer What's the difference between Explore and Validate?`
+> For a context-matched recommendation: `assess [situation]`"
+
 **Purpose**: Answer direct questions about the framework, risks, stages, methods, anti-patterns, guardrails, and discovery concepts — without triggering an assessment flow.
 
 **Data files** (read as needed based on topic):

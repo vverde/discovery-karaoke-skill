@@ -10,7 +10,7 @@
 
 Frame the instrument as it is labelled in the file: *"a reflective heuristic, not a validated instrument — use results to surface patterns worth examining, not as a definitive score."*
 
-**Step 2**: Calculate the total score. Apply the interpretation bands defined in `data/anti-patterns.md` (0–8 / 9–15 / 16–21 / 22–30).
+**Step 2**: Calculate the total score. Apply the interpretation bands as defined in `data/anti-patterns.md` — read the bands from that file, do not use hardcoded values here.
 
 **Step 3**: Map the highest-scoring questions to their corresponding **named anti-patterns** from `data/anti-patterns.md`. Each question corresponds to a specific pattern — identify them by name.
 

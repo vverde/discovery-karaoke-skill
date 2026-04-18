@@ -347,12 +347,14 @@ Score yourself (0 = never, 3 = always):
 | Our discovery is mainly about building confidence, not reducing uncertainty | |
 | We rely primarily on analytics without regular qualitative research | |
 | We have not spoken to a churned user or a lost prospect in the past three months | |
+| We build prototypes or MVPs before validating that we understand the underlying problem | |
+| We continue researching after we already have enough signal to make a decision | |
 
 **Score interpretation:**
-- **0-8**: Deliberate discovery — you are matching methods to risks
-- **9-15**: Mild karaoke — some defaults creeping in; review your method selection discipline
-- **16-21**: Significant karaoke — build or revisit your risk-to-method map
-- **22-30**: Full karaoke — the discovery practice needs a fundamental reset
+- **0-10**: Deliberate discovery — you are matching methods to risks
+- **11-18**: Mild karaoke — some defaults creeping in; review your method selection discipline
+- **19-25**: Significant karaoke — build or revisit your risk-to-method map
+- **26-36**: Full karaoke — the discovery practice needs a fundamental reset
 
 ---
 

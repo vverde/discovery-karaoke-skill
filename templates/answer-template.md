@@ -7,7 +7,7 @@ Use this template for the CMD: answer command (framework Q&A fallback).
 ## Template
 
 ```
-# 💡 [Topic / Question]
+# [Topic / Question]
 
 [Direct, concise answer — 1 paragraph or structured bullets. No assessment questions. No recommendation flow.]
 

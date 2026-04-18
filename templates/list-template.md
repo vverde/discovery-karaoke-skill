@@ -8,7 +8,7 @@ Use this template for the `list` command. Four variants × two output modes.
 *(Same in both output modes — always compact)*
 
 ```
-# 📋 Browse Discovery Methods
+# Browse Discovery Methods
 
 Filter options (AND logic — combine freely):
 
@@ -24,7 +24,7 @@ Filter options (AND logic — combine freely):
 - `list methods B2B explore` — B2B-relevant Explore methods
 - `list methods compliance validate` — Compliance methods for Validate stage
 
-To show all 80 active methods: `list methods all`
+To show all 69 active methods: `list methods all`
 ```
 
 ---
@@ -32,7 +32,7 @@ To show all 80 active methods: `list methods all`
 ## Variant 2: Filtered Results — Compact (config: output_mode = compact)
 
 ```
-# 📋 [Filter Applied] — [X] methods
+# [Filter Applied] — [X] methods
 
 | M## | Name | Stage |
 |-----|------|-------|
@@ -50,9 +50,9 @@ To show all 80 active methods: `list methods all`
 ## Variant 2: Filtered Results — Standard (default)
 
 ```
-# 📋 Discovery Methods: [Filter Applied]
+# Discovery Methods: [Filter Applied]
 
-Showing [X] of 80 active methods.
+Showing [X] of 69 active methods.
 
 | M## | Name | Risk | Stage | Category | Tier | Time | Evidence |
 |-----|------|------|-------|----------|------|------|----------|
@@ -69,15 +69,15 @@ Showing [X] of 80 active methods.
 ## Variant 3: All Methods — Compact (config: output_mode = compact)
 
 ```
-# 📋 All Methods (80 Active)
+# All Methods (69 Active)
 
 | M## | Name | Stage |
 |-----|------|-------|
-[All 80 active methods — 3 columns only]
+[All 69 active methods — 3 columns only]
 
 ---
 
-> Tiers: Core (32) · Extended (43) · Specialist (8)
+> Tiers: Core (31) · Extended (41) · Specialist (8)
 > `list methods all full` — show all columns
 > `list tools` — context tools
 ```
@@ -87,16 +87,16 @@ Showing [X] of 80 active methods.
 ## Variant 3: All Methods — Standard (default)
 
 ```
-# 📋 All Discovery Methods (80 Active)
+# All Discovery Methods (69 Active)
 
 | M## | Name | Risk | Stage | Category | Tier | Time | Evidence |
 |-----|------|------|-------|----------|------|------|----------|
-[All 80 active methods]
+[All 69 active methods]
 
 ---
 
-> 80 active methods shown. 3 superseded methods excluded.
-> Tiers: Core (32) · Extended (43) · Specialist (8)
+> 69 active methods shown. 3 superseded methods excluded.
+> Tiers: Core (31) · Extended (41) · Specialist (8)
 > Context tools listed separately: `/discovery-karaoke list tools`
 
 `/discovery-karaoke describe [M##]` — full entry for any method
@@ -105,10 +105,10 @@ Showing [X] of 80 active methods.
 ---
 
 ## Variant 4: Context Tools
-*(Same in both output modes — only 10 tools, always show all columns)*
+*(Same in both output modes — only 11 tools, always show all columns)*
 
 ```
-# 🛠️ Context Tools (10)
+# Context Tools (11)
 
 Context tools structure discovery thinking. Use them alongside evidence-generating methods — not as standalone discovery activities.
 
@@ -131,6 +131,6 @@ Context tools structure discovery thinking. Use them alongside evidence-generati
 1. Variant 1 (filter guidance): always compact — it's navigation, not data
 2. Variants 2/3 compact: 3 columns only (M##, Name, Stage). Always include `full` upgrade offer
 3. Variants 2/3 standard: 8 columns. Always include describe offer
-4. Variant 4 (tools): always 4 columns — only 10 rows, full columns always worth showing
-5. Show match count ("Showing X of 80") in Variants 2/3 — helps user see if filter is too narrow
+4. Variant 4 (tools): always 4 columns — only 11 rows, full columns always worth showing
+5. Show match count ("Showing X of 69") in Variants 2/3 — helps user see if filter is too narrow
 6. Never include superseded methods in any variant

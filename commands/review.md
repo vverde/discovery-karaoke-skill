@@ -26,8 +26,4 @@
 
 **Step 4**: Read `templates/review-template.md`. Deliver output using that card structure exactly.
 
-**Tone rules**:
-- Lead with what's working
-- Never "you're doing it wrong" — use "this matches [Anti-Pattern Name]: [pattern description]"
-- Every flagged symptom must include the recovery action from that pattern's entry in `data/anti-patterns.md`
-- Health score uses the same 4-band scale as `diagnose`
+**Note**: Health score uses the same 4-band scale as `diagnose` (read bands from `data/anti-patterns.md`).
