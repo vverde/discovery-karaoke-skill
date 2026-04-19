@@ -199,6 +199,26 @@ These rules apply to every command output, across all 13 commands.
 
 **Concise prose.** Target 80 characters per line for prose sections. Tables and boxes follow their own width constraints (see templates).
 
+**Prose density (applies inside every prose block, every command):**
+
+- **2 sentences maximum per paragraph.** If a third sentence is needed, start a new paragraph or use a bullet.
+- **Cut explanatory asides.** Delete phrases like "This is because...", "Note that...", "In [context] this often looks like...", "It's worth noting that...". Say the thing directly.
+- **No restatement.** If the previous sentence already said it, the next sentence cannot paraphrase it. Delete the paraphrase.
+- **Cut parenthetical clarifications** unless the term is genuinely ambiguous to a non-expert. When in doubt, cut.
+- **No meta-commentary.** Never describe what you are about to say. Say it.
+- **Karaoke check prose: max 3 sentences total** — default move (1 sentence), why it fails (1 sentence), deliberate alternative (1 sentence).
+- **Why-this-method prose: max 2 sentences.** Name the fit. Name what it unlocks. Stop.
+
+**Rewrite test — apply before finalising any prose block:**
+> Does this sentence add information the previous one didn't? If no → delete it.
+> Does this sentence start with "This", "That", or "It" referring to something just stated? If yes → delete it; the previous sentence already closed the point.
+
+Examples:
+- ❌ "Users engage with a prototype because it is in front of them, not because they would seek it out and pay for it."
+- ✅ "Users engage because it's in front of them — not because they'd seek it out."
+- ❌ "It gives you directional signal on desirability (do they want it?), comprehension (do they understand it?), and priority (is this worth their attention?) without the cost of a prototype."
+- ✅ "Gets desirability, comprehension, and priority signal — no prototype needed."
+
 ---
 
 ## Error Handling
