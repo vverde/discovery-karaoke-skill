@@ -3,7 +3,7 @@ name: discovery-karaoke
 description: Stop doing Discovery Karaoke. Match discovery methods to risk — not habit. 13 commands: assess situations, plan full discovery arcs, browse 80 methods and tools, diagnose karaoke symptoms, review plans, and navigate AI product discovery. Based on The Thinking Lens.
 argument-hint: "[command] [args]"
 disable-model-invocation: true
-license: CC BY 4.0
+license: CC BY-NC 4.0
 metadata:
   version: 1.0.0
 ---
@@ -255,22 +255,3 @@ This fallback applies to all commands. Individual command files do not need to r
 Method sections in `data/discovery-methods-full.md` use the heading format `## METHOD ##: Name` (e.g., `## METHOD 23: Contextual Inquiry`). When writing targeted read instructions in command files, reference this format explicitly — not `## M##`.
 
 ---
-
-## Changelog
-
-### 1.1.0 — 2026-04-19
-- Compact output mode: default changed to `compact`; `full` suffix added to all output commands
-- Prose density rules added to Tone section (2-sentence cap, no restatement, karaoke check max 3 sentences)
-- Compact Template added to all 5 output templates (recommendation, plan, review, diagnostic, comparison)
-- Method/tool counts corrected everywhere: 67 methods + 13 context tools (was 69+11 — M60 and M78 are Operating Practices, not Methods)
-- data/about.md: category table corrected to match index (Generative 17, Evaluative 18, Experimentation 15, Analytics 7, Compliance 9, Strategic Framing 1); AI Feasibility row removed (not an index category); web app URL updated
-- README rewritten for skill repo (replaced web app content)
-
-### 1.0.0 — 2026-04-18 (Initial stable release)
-- 13 commands: assess, quick, plan, ai, list, describe, compare, matrix, diagnose, review, config, about, help (+ answer via smart fallback)
-- 80 active entries (M1–M96, non-contiguous): 67 methods + 13 context tools
-- 12 named anti-patterns + 36-point diagnostic
-- 11 guardrails (G1–G11)
-- Signal-based pre-fill, config file support
-
-**Breaking change policy**: Increment to 2.0.0 for: removing a command, renaming a guardrail ID (G1–G11), changing a data file schema (methods-index.md columns, anti-patterns.md diagnostic format). Increment to 1.x.0 for: adding commands, new guardrails, data additions. Wording and template fixes do not require a version bump.

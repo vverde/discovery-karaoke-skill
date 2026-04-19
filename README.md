@@ -213,4 +213,4 @@ python3 local/generate_index.py
 
 ## License
 
-[CC BY 4.0](LICENSE) — free to use, share, and adapt with attribution to Amodiovalerio Verde / The Thinking Lens.
+[CC BY-NC 4.0](LICENSE) — free to use, share, and adapt with attribution to Amodiovalerio Verde / The Thinking Lens. Commercial use prohibited.
