@@ -82,7 +82,7 @@ Each method entry includes: risk tags, stage, time/effort/cost, evidence strengt
 ```
 discovery-karaoke-skill/
 ├── SKILL.md                          # Command router + 11 guardrails + framework reference
-│                                     # Always loaded; ~160 lines / ~1,400 tokens
+│                                     # Always loaded; ~268 lines / ~2,700 tokens
 ├── commands/  (14 files)
 │   ├── assess.md                     # Full recommendation flow (signal pre-fill, 3 batches)
 │   ├── quick.md                      # 4-question fast path
@@ -114,7 +114,7 @@ discovery-karaoke-skill/
 └── local/  (gitignored)
     ├── generate_index.py             # Regenerates methods-index.md from source DB
     ├── golden_eval.py                # Behavioral tests against Claude API
-    └── golden-cases.yaml             # 11 golden test cases
+    └── golden-cases.yaml             # 11 golden test cases with expected output markers
 ```
 
 Command files and data files are loaded on demand — only when the routed command needs them. `SKILL.md` is the only file always in context.
@@ -130,7 +130,8 @@ Two modes controlled by config or per-command `full` suffix:
 
 Override per command:
 ```
-/discovery-karaoke assess full [situation]   # standard output for this invocation only
+/discovery-karaoke assess [situation] full   # standard output for this invocation only
+/discovery-karaoke compare M1 vs M23 full    # full suffix works on any output command
 ```
 
 Set globally:
