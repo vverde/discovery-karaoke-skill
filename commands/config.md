@@ -2,8 +2,10 @@
 
 **Trigger**: `config`
 
-**No subcommand**: Apply G11:
+**No subcommand** — STOP. Do not proceed to any subcommand flow. Apply G11 and output only:
 > "Available: `config save` | `config show` | `config clear`"
+
+Then wait for the user's next message. Do not ask questions. Do not start the save flow.
 
 ---
 
@@ -20,7 +22,8 @@ Ask via AskUserQuestion:
 
 Warn if overwriting an existing config (G7).
 
-Write to `.discovery-karaoke-config.yml` in the working directory:
+Write to `.discovery-karaoke-config.yml` in the working directory at time of invocation. On completion, confirm:
+> "Config saved to `[resolved path]/.discovery-karaoke-config.yml`. Add this file to `.gitignore` if you don't want team context committed to the repository."
 
 ```yaml
 # Discovery Karaoke — Team Config
@@ -39,8 +42,11 @@ created: [YYYY-MM-DD]
 
 ---
 
-**config show**: Read `.discovery-karaoke-config.yml` and display in readable format. If none exists: "No config saved. Run `config save` to set your team context."
+**config show**: Read `.discovery-karaoke-config.yml` from the working directory at time of invocation. Display as:
+> "Config loaded from: `[resolved path]/.discovery-karaoke-config.yml`"
+followed by the config contents in readable format. If none exists:
+> "No config found at `[resolved path]/.discovery-karaoke-config.yml`. Run `config save` to create one, or check if you're in the right directory."
 
 ---
 
-**config clear**: Confirm before deleting. On confirm: delete `.discovery-karaoke-config.yml`.
+**config clear**: Confirm before deleting. On confirm: delete `.discovery-karaoke-config.yml`. Note: if you've moved projects, check your previous directory for an orphaned `.discovery-karaoke-config.yml` and remove it manually.

@@ -410,3 +410,5 @@ Common risk pairings and recommended method sequences.
 | M64 | Pre-mortem (Prospective Hindsight) | Framework | All — surface hidden risks before large bets |
 | M88 | JTBD Framework (Forces of Progress) | Framework | V — context tool for JTBD interview design |
 | M89 | Capability Contract Workshop | Framework | F, C — AI products; scope before building |
+
+> **M42 classification note**: M42 is classified as a Method (Type: `"Method"`) in `data/methods-index.md` and will appear in `list methods` output, not in `list tools` output. It appears here because of its strategic framing use alongside demand validation methods — orienting the competitive landscape before running M1, M23, or M48. It is not a context tool in the same sense as M32 or M33; it generates independent evidence from publicly available sources.

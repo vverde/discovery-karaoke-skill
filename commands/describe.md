@@ -13,7 +13,9 @@
 - Starts with `M` (case-insensitive) → look up the full entry in `data/discovery-methods-full.md`
 - Not recognized as M-code → same G11 response as above
 
-**Display the full entry**: Read `data/discovery-methods-full.md` to get the method entry, then read `templates/describe-template.md`. Deliver output using that card structure.
+**Display the full entry**: Read only the target method section from `data/discovery-methods-full.md` (not the full file), then read `templates/describe-template.md`. Deliver output using that card structure.
+
+Method sections use the heading format `## METHOD ##: Name` — e.g., `## METHOD 23: Contextual Inquiry`. Locate the section by searching for this heading pattern (not `## M##`).
 
 **Output mode** — check config `output_mode`, or look for `full` suffix after the M-code (e.g., `describe M23 full`):
 

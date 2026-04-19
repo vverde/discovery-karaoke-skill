@@ -24,10 +24,13 @@ Not sure where to start?
   Learn the framework:       /discovery-karaoke about
   Quick recommendation:      /discovery-karaoke quick [situation]
   Run the diagnostic:        /discovery-karaoke diagnose
+  Framework question:        just ask — e.g. "What is blast radius?" or "How does G10 work?"
 
 Available commands:
-  about | assess | quick | plan | ai | list | describe | compare
-  matrix | diagnose | review | config
+  Get a recommendation:  assess · quick · plan · ai
+  Browse the toolkit:    list · describe · compare · matrix
+  Review your practice:  diagnose · review
+  Setup & reference:     config · about
 
 Type /discovery-karaoke help commands for the full reference.
 ```

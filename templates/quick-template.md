@@ -20,7 +20,12 @@ Use this compact template for the `quick` command. Faster, lighter — but still
 
 ---
 
-## Top 3 Methods
+> **RENDER GATE** — Before rendering, check blast radius:
+> - Small bet → render Method 1 only. Remove Methods 2 and 3.
+> - Medium bet → render Methods 1–2. Remove Method 3.
+> - Large bet → render all three only if two distinct risk types are both active (G10). Otherwise render Methods 1–2.
+
+## Top Methods
 
 ### 1. [M##: Name] — Start here
 **Why**: [1 sentence connecting to their risk]
@@ -32,7 +37,7 @@ Use this compact template for the `quick` command. Faster, lighter — but still
 **Time**: [Duration] | **Evidence**: [Strength]
 **What you'll learn**: [1 sentence]
 
-### 3. [M##: Name] — If needed
+### 3. [M##: Name] — If needed (large bets with two active risk types only)
 **Why**: [1 sentence]
 **Time**: [Duration] | **Evidence**: [Strength]
 **What you'll learn**: [1 sentence]

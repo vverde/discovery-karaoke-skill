@@ -8,8 +8,8 @@
 
 ## Counts (update when DB changes)
 
-- Active methods: 69
-- Context tools: 11
+- Active methods: 67
+- Context tools: 13
 - Total active entries: 80
 - Superseded: 3
 - Anti-patterns: 12
@@ -45,7 +45,7 @@
 |----------|---------------|--------------|
 | Small (feature tweak) | 1 method | Moderate |
 | Medium (new feature) | 2 methods | Converging |
-| Large (new product/pivot) | 3+ methods | Strong convergence |
+| Large (new product/pivot) | 3 methods (maximum) | Strong convergence across multiple risk types |
 
 ## Method ID Notes
 

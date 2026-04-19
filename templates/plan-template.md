@@ -18,6 +18,18 @@ Use this template for the `plan` command. Full discovery arc across all remainin
 
 ---
 
+## Arc Summary
+
+| Stage | Methods | Decision Gate |
+|-------|---------|--------------|
+| Explore | [M## Name] · [M## Name] | [Key go/pivot signal in one phrase] |
+| Validate | [M## Name] · [M## Name] | [Key go/pivot signal in one phrase] |
+| Optimize | [M## Name] | [Ongoing signal] |
+
+**Total arc**: [X] methods across [Y] stages. Evidence threshold: [matches blast radius per G3].
+
+---
+
 ## Stage 1: Explore — [Risk question for this risk type]
 
 **Goal**: [What uncertainty this stage is reducing]
@@ -66,7 +78,7 @@ Use this template for the `plan` command. Full discovery arc across all remainin
 
 ---
 
-## Stage 3: Optimize *(if applicable — skip for kill/pivot outcomes)*
+## Stage 3: Optimize *(medium/large bets only — skip entirely for small bets and kill/pivot outcomes)*
 
 **Goal**: Improve and measure what's live
 
@@ -87,17 +99,9 @@ Use this template for the `plan` command. Full discovery arc across all remainin
 
 ---
 
-## Arc Summary
+*This is a discovery plan, not a delivery plan. Kill and pivot signals are go/no-go checkpoints — treat them as such in stakeholder communication.*
 
-| Stage | Methods | Decision Gate |
-|-------|---------|--------------|
-| Explore | [M## Name] · [M## Name] | [Key go/pivot signal in one phrase] |
-| Validate | [M## Name] · [M## Name] | [Key go/pivot signal in one phrase] |
-| Optimize | [M## Name] | [Ongoing signal] |
-
-**Total arc**: [X] methods across [Y] stages. Evidence threshold: [matches blast radius per G3].
-
----
+*This plan assumes episodic discovery. If you're running continuous weekly discovery cycles, use `assess` for individual opportunities rather than `plan` for full arcs.*
 
 *Framework: The Thinking Lens — "Stop Doing Discovery Karaoke" | the-thinking-lens.com*
 ```
@@ -110,6 +114,6 @@ Use this template for the `plan` command. Full discovery arc across all remainin
 2. Decision Gates are mandatory between every stage — no gate = no plan
 3. G10 applies per stage: 1-2 methods maximum per stage
 4. G6 karaoke check covers the full arc, not individual methods
-5. Arc Summary table is always the last section before attribution — gives the user a one-glance view
+5. Arc Summary appears immediately after Context — gives the user a one-glance view before reading stage details
 6. If blast radius is Small: Explore + Validate only (skip Optimize or note it briefly). Large bets get all three stages in full.
 7. Include attribution

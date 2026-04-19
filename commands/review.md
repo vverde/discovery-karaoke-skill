@@ -26,4 +26,9 @@
 
 **Step 4**: Read `templates/review-template.md`. Deliver output using that card structure exactly.
 
+**Step 5: Offer follow-up**:
+- `/discovery-karaoke assess [situation]` — get a fresh method recommendation for the same situation
+- `/discovery-karaoke plan [situation]` — map the full discovery arc across all stages
+- `/discovery-karaoke diagnose` — check if the karaoke patterns found here extend across your broader discovery practice
+
 **Note**: Health score uses the same 4-band scale as `diagnose` (read bands from `data/anti-patterns.md`).

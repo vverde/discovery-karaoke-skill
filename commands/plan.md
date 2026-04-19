@@ -5,9 +5,9 @@
 **Purpose**: Generate a full discovery arc across all three stages (Explore → Validate → Optimize) for a given bet. Unlike `assess` (which recommends what to do right now), `plan` shows the complete staged sequence with decision gates between each stage.
 
 **No situation provided**: Apply G11:
-> "Describe your bet or initiative and I'll map the full discovery arc.
+> "Describe your bet or initiative and I'll map the full discovery arc (Explore → Validate → Optimize).
 > Example: `plan We're considering adding an AI writing assistant to our B2B product`
-> For a point-in-time recommendation: `assess [situation]`"
+> For a point-in-time recommendation at your current stage only: `assess [situation]`"
 
 **Data files**:
 - `data/risk-method-matrix.md` — Risk × Stage navigation for all three stages
@@ -64,11 +64,11 @@ Read `data/anti-patterns.md`. Evaluate the entire proposed sequence:
 
 ---
 
-**Step 5**: Read `templates/plan-template.md`. Deliver output using that card structure exactly.
+**Step 5**: Read `templates/plan-template.md`. Arc Summary is rendered immediately after Context (before stage details), giving the user a one-glance view of the full arc. Then render stage details and Karaoke Check.
 
 ---
 
 **Step 6: Offer follow-up**:
-- `/discovery-karaoke assess [situation]` — point-in-time recommendation for your current stage
+- `/discovery-karaoke assess [situation]` — point-in-time recommendation for your current stage only (no arc)
 - `/discovery-karaoke describe M##` — deep-dive on any method in the plan
 - `/discovery-karaoke review [plan]` — critique an existing plan for karaoke symptoms

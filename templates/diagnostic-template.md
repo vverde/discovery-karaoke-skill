@@ -23,10 +23,7 @@ Use this template for the `diagnose` command. Interactive karaoke diagnostic sco
 
 ### [Band name based on score]
 
-- **0-10: Deliberate Discovery** — You're matching methods to risks. Keep it up. Watch for creeping defaults.
-- **11-18: Mild Karaoke** — Some defaults creeping in. Review your method selection for the top 2-3 questions you scored highest on.
-- **19-25: Significant Karaoke** — Time to rebuild your risk-to-method mapping. Your process has become the default.
-- **26-36: Full Karaoke** — Your discovery process needs a fundamental rethink. Start with the 30-minute recovery exercise below.
+[Read the score interpretation bands from `data/anti-patterns.md` — section "Diagnostic: Are You Doing Discovery Karaoke?", subsection "Score interpretation". Use the exact band labels, score ranges, and descriptions from that file. This prevents drift when bands are updated.]
 
 ---
 

@@ -22,7 +22,7 @@
    - Already built — evaluating quality in production
 3. Does your feature process personal data, make automated decisions, or potentially fall under EU AI Act scope? Yes / No / Unsure
 
-**Step 2**: Read `data/ai-guardrails.md` in full. Read the M89, M90, M91 entries from `data/discovery-methods-full.md`.
+**Step 2**: Read `data/ai-guardrails.md` in full. Read only the M89, M90, and M91 sections from `data/discovery-methods-full.md` (not the full file). These sections use the headings `## METHOD 89: ...`, `## METHOD 90: ...`, `## METHOD 91: ...` — locate them by searching for this heading pattern.
 
 **Step 3**: Recommend based on where the user is:
 

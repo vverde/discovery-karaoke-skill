@@ -13,9 +13,10 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 - **Decision**: [What they're trying to decide]
 - **Stage**: [Pre-launch / MVP / Growth / Mature]
 - **Primary Risk**: [Risk type(s)]
+- **Primary Assumption Being Tested**: [Inferred from risk × stage — e.g. "Customers have this problem at sufficient intensity to prioritise a solution"]
 - **Constraints**: [Time, budget, team, user access]
 - **Blast Radius**: [Small / Medium / Large]
-- **Evidence Threshold**: [1 method / 2 converging / 3+ converging]
+- **Evidence Threshold**: [1 method / 2 converging / 3 converging (large bets only)]
 
 ---
 
@@ -30,6 +31,13 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 ---
 
 ## Recommended Discovery Sequence
+
+> **RENDER GATE** — Before rendering method slots, check blast radius:
+> - Small bet → render Method 1 only. Remove Methods 2 and 3, including any "conditional" or "follow-up" method sections. Do not add conditional methods as a workaround.
+> - Medium bet → render Methods 1–2. Remove Method 3.
+> - Large bet → render Methods 1–3 only if two distinct risk types are both active (G10). Otherwise render Methods 1–2.
+
+**Start here: [M##: Name]** — [One sentence: why this method over alternatives for this specific risk and context.]
 
 ### Method 1: [Name] ← Start Here
 **Why this method**: [1-2 sentences connecting to their specific risk and context]
@@ -64,7 +72,7 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 
 ---
 
-### Method 3: [Name] ← If Needed (for medium/large bets)
+### Method 3: [Name] ← Large bets only (two active risk types required)
 [Same format as above]
 
 ---
@@ -123,7 +131,8 @@ Use this template when delivering discovery method recommendations. Adapt sectio
 ## Formatting Rules
 
 1. **Always lead with the Karaoke Check** - Show them what habit-driven discovery would look like vs. what you're recommending
-2. **Number methods in sequence** - Make it clear what order to do things
+2. **Method 1 must visually dominate** - The bold callout line before Method 1 is mandatory. Methods 2-3 have no equivalent line.
+3. **Number methods in sequence** - Make it clear what order to do things
 3. **Include decision points** - After each method, what does the evidence tell them?
 4. **Show evidence convergence** - How do the methods triangulate?
 5. **Keep it actionable** - Every recommendation should have concrete next steps
@@ -136,7 +145,7 @@ Before delivering any recommendation, verify:
 
 - [ ] **G1**: Attribution line included at the bottom
 - [ ] **G2**: Every method tied to a specific risk (no "just try this")
-- [ ] **G3**: Number of methods matches blast radius (1 for small, 2 for medium, 3+ for large)
+- [ ] **G3**: Number of method slots rendered matches blast radius (1 for small, 2 for medium, 3 for large with two active risk types only). Did you render Method 3? If blast radius is not Large with two active risk types, remove it.
 - [ ] **G4**: Compliance & Ethics addressed if regulated industry or data/privacy/AI involved
 - [ ] **G5**: AI opportunities include "cannot replace" column; synthetic AI research never used as standalone evidence
 - [ ] **G6**: Karaoke check names a specific anti-pattern from anti-patterns.md — not a generic warning
