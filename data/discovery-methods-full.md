@@ -37,7 +37,7 @@ The framework answers one practical question: *given my risk, my stage, and my c
 
 **Scope curation decisions that have been made:**
 - Deprecated 12 methods (M34, M40, M41, M43, M51, M52, M61, M62, M63, M85, M86, M87) as out-of-scope for discovery – they belong to delivery planning, synthesis, or business design
-- Retained 11 framing/synthesis tools (Context Tools) in the DB with explicit notes – they appear to prevent misuse, not because they generate evidence
+- Retained 13 framing/synthesis/practice tools (Context Tools) in the DB with explicit notes – they appear to prevent misuse, not because they generate evidence
 - Superseded 3 methods (M25, M30, M46) rather than deleting – preserves searchability and institutional memory
 
 **The anti-karaoke design principle** runs through every entry: methods are organised by the risk they address, not by category popularity. Evidence strength is explicitly rated. Non-evidence-generating tools are clearly labelled. Every method has a "When NOT to Use" section. These are not academic completeness features – they are misuse prevention.
@@ -77,7 +77,7 @@ discovery-methods-full.md  →  parse_data.py  →  data.js  →  web app
 
 **Known design tensions (intentional, not bugs):**
 - 83 entries span Methods, Frameworks, Synthesis Tools, and two Operating Practices – mixed types in one flat list, by design. Category + Type fields carry the distinction.
-- Evidence Strength: N/A marks all non-evidence-generating entries (11 context/synthesis tools). These tools appear in the DB to prevent misuse, not because they generate evidence.
+- Evidence Strength: N/A marks all non-evidence-generating entries (13 context tools). These tools appear in the DB to prevent misuse, not because they generate evidence.
 - Best For Company is low-signal (43/80 = Any). It is metadata, not a primary filter. The three constraint fields (Needs Existing Users, Needs Live Traffic, Needs Legal Review) are the operative filters.
 - ID sequence is non-contiguous (gaps at M34/M40/M41/M43/M50–M52/M61–M63/M85–M87) – result of scope curation across sessions. IDs are stable identifiers, not sequence numbers. M25/M30/M46 are present but Superseded.
 - Portfolio skews toward Validate and Solution Space by design – that is where karaoke is most common and most damaging. Explore and Problem Space coverage is sufficient for practitioner use but not encyclopedic.

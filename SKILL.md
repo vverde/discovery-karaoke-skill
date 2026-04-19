@@ -155,8 +155,8 @@ When a command is invoked without sufficient specificity — no risk, no filter,
 | Large (new product/pivot) | New product/segment/BM, or >25% users, hard to reverse | 3 methods (maximum) | Strong convergence |
 
 ### The Toolkit
-- **Discovery Methods** (M1–M96, non-contiguous): 80 active evidence-generating activities across 69 methods + 11 context tools. Gaps at M34/M40/M41/M43/M50–M52/M61–M63/M85–M87 — result of scope curation; IDs are stable identifiers, not sequence numbers. M25/M30/M46 are present but Superseded. Tiers (active methods only): Core (31) / Extended (41) / Specialist (8).
-- **Context Tools** (M-coded subset): 11 frameworks and synthesis tools — companion to methods, never standalone discovery.
+- **Discovery Methods** (M1–M96, non-contiguous): 80 active evidence-generating activities across 67 methods + 13 context tools. Gaps at M34/M40/M41/M43/M50–M52/M61–M63/M85–M87 — result of scope curation; IDs are stable identifiers, not sequence numbers. M25/M30/M46 are present but Superseded. Tiers (active methods only): Core (31) / Extended (41) / Specialist (8).
+- **Context Tools** (M-coded subset): 13 entries (Frameworks, Synthesis Tools, Operating Practices) — companion to methods, never standalone discovery.
 
 **M-code display convention**: Use `M## Name` in prose — e.g. `M23 Contextual Inquiry`. No colon or dash between code and name. Use bare `M##` only in tables where space is constrained.
 
@@ -233,7 +233,7 @@ Examples:
 **Missing arguments**: Apply G11 — each command file defines the specific guided response.
 
 **Invalid M-code**:
-> "Method [ID] not found. Run `/discovery-karaoke list methods` to browse all 69 active methods, or `/discovery-karaoke list tools` for the 11 context tools."
+> "Method [ID] not found. Run `/discovery-karaoke list methods` to browse all 67 active methods, or `/discovery-karaoke list tools` for the 13 context tools."
 
 **Missing data file**:
 > "Data file [name] not found. Operating with available data — some outputs may be incomplete."
@@ -260,7 +260,7 @@ Method sections in `data/discovery-methods-full.md` use the heading format `## M
 
 ### 1.0.0 — 2026-04-18 (Initial stable release)
 - 13 commands: assess, quick, plan, ai, list, describe, compare, matrix, diagnose, review, config, about, help (+ answer via smart fallback)
-- 80 active methods (M1–M96, non-contiguous): 69 methods + 11 context tools
+- 80 active methods (M1–M96, non-contiguous): 67 methods + 13 context tools
 - 12 named anti-patterns + 36-point diagnostic
 - 11 guardrails (G1–G11)
 - Signal-based pre-fill, config file support, compact/standard output modes

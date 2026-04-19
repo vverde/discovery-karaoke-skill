@@ -67,23 +67,25 @@ Evidence-generating activities. Each entry includes: Risk, Stage, Business Model
 | Compliance & Ethics | 10 | Data-flow Mapping (M75), DPIA/PIA (M76), AI Red Teaming (M81), Fairness Assessment (M80) |
 | AI Feasibility | 3 | Capability Contract Workshop (M89), AI Capability Assessment (M90), Data Readiness Assessment (M91) |
 
-**11 Context Tools** (M-coded frameworks and synthesis tools):
+**13 Context Tools** (M-coded frameworks, synthesis tools, and operating practices):
 
 Context tools structure thinking — they are companions to discovery methods, not standalone activities. They do not generate independent user evidence.
 
-| M-code | Tool |
-|--------|------|
-| M32 | Assumption Mapping |
-| M33 | Opportunity Solution Trees (OST) |
-| M35 | Customer Journey Mapping |
-| M36 | Service Blueprinting |
-| M37 | Empathy Mapping |
-| M38 | Persona Development |
-| M39 | Value Proposition Canvas |
-| M42 | Continuous Interviewing |
-| M64 | Pre-mortem (Prospective Hindsight) |
-| M88 | JTBD Framework (Forces of Progress) |
-| M89 | Capability Contract Workshop |
+| M-code | Tool | Type |
+|--------|------|------|
+| M31 | Design Sprint | Framework |
+| M32 | Assumption Mapping | Framework |
+| M33 | Opportunity Solution Trees (OST) | Framework |
+| M35 | Customer Journey Mapping | Framework |
+| M36 | Service Blueprinting | Synthesis Tool |
+| M37 | Empathy Mapping | Synthesis Tool |
+| M38 | Persona Development | Synthesis Tool |
+| M39 | Value Proposition Canvas | Framework |
+| M60 | Continuous Interviewing | Operating Practice |
+| M64 | Pre-mortem (Prospective Hindsight) | Framework |
+| M78 | Participatory Engagement with Affected Communities | Operating Practice |
+| M88 | JTBD Framework (Forces of Progress) | Framework |
+| M89 | Capability Contract Workshop | Framework |
 
 **AI Feasibility Sequence** (M89 → M91 → M90):
 
@@ -94,7 +96,7 @@ For any product built on AI/LLM capabilities — run in this order:
 
 Skipping M89 means M90 tests the wrong thing. Skipping M91 means M90 runs on unverified data.
 
-**11 Anti-Patterns**: Discovery Karaoke symptoms with diagnostic scorecard and recovery actions.
+**12 Anti-Patterns**: Discovery Karaoke symptoms with diagnostic scorecard and recovery actions.
 
 **11 Guardrails**: Rules that protect the intellectual integrity of every recommendation.
 

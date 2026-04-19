@@ -46,8 +46,8 @@ Discovery Karaoke Prevention Engine — Command Reference
   plan [situation]           Full discovery arc — Explore → Validate → Optimize stages + decision gates
   ai [situation]             AI product discovery — M89/M91/M90 sequence + guardrails
   list methods [filter]      Browse methods by risk, stage, category, or constraint
-  list methods all           Show all 69 active methods (context tools: list tools)
-  list tools                 Browse 11 context tools
+  list methods all           Show all 67 active methods (context tools: list tools)
+  list tools                 Browse 13 context tools
   describe [M##]             Deep-dive on a specific method or context tool
   compare [M##] vs [M##]     Side-by-side comparison of two methods
   matrix                     Compact 5×3 overview — top methods per cell
@@ -78,5 +78,5 @@ Examples:
   /discovery-karaoke review We interview users, then prototype, then usability test
 
 Framework: The Thinking Lens — the-thinking-lens.com
-Toolkit: 80 active entries (69 methods + 11 context tools) | 12 anti-patterns | 11 guardrails
+Toolkit: 80 active entries (67 methods + 13 context tools) | 12 anti-patterns | 11 guardrails
 ```
