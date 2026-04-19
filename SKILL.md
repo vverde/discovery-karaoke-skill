@@ -4,6 +4,7 @@ description: "Stop doing Discovery Karaoke. Match discovery methods to risk, not
 argument-hint: "[command] [args]"
 disable-model-invocation: true
 license: CC BY-NC 4.0
+compatibility: claude-code
 metadata:
   version: 1.0.0
 ---
