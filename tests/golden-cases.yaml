@@ -1,0 +1,267 @@
+# Discovery Karaoke — Golden Eval Cases
+#
+# Runtime behavior tests. Not run on every commit — run before releases or
+# when SKILL.md, a command file, or a template changes.
+#
+# Run:   python3 local/golden_eval.py
+#        python3 local/golden_eval.py --case TC-16
+#        python3 local/golden_eval.py --dry-run
+#
+# Each case:
+#   system_files  : files to concatenate into the system prompt (relative to skill root)
+#   input         : exact user message sent to the model
+#   expect_present: strings that MUST appear in the response
+#   expect_absent : strings that MUST NOT appear in the response
+#   notes         : what this case guards against
+
+# ---------------------------------------------------------------------------
+# SECTION 1: Smart Fallback Routing
+# ---------------------------------------------------------------------------
+
+- id: TC-11
+  name: "Framework question — answer directly, no context questions"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/answer.md
+  input: "What is blast radius?"
+  expect_present:
+    - "blast radius"
+  expect_absent:
+    - "What are you trying to decide"
+    - "Primary risk"
+    - "Batch 1"
+  notes: >
+    Framework questions must be answered directly.
+    Routing to assess and asking context questions is a regression.
+    Note: "Stage" intentionally removed from expect_absent — it legitimately
+    appears in evidence threshold tables when explaining the concept.
+
+- id: TC-12
+  name: "Situation description — initiates assess Batch 1 questions"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/assess.md
+  input: "We're considering adding a self-serve tier for SMBs"
+  expect_present:
+    - "?"
+  expect_absent:
+    - "Method 1"
+    - "Karaoke Check"
+    - "Evidence Convergence"
+  notes: >
+    Situation descriptions must trigger assess context-gathering (Batch 1),
+    not jump straight to a recommendation. The real regression is rendering
+    a recommendation without gathering context first.
+
+- id: TC-13
+  name: "Ambiguous short input — asks clarifying question"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/answer.md
+    - commands/assess.md
+  input: "user research"
+  expect_present:
+    - "?"
+  expect_absent:
+    - "Method 1"
+    - "Primary risk"
+  notes: >
+    Under-4-word ambiguous input must trigger a clarifying question (G11),
+    not generate a recommendation or start full assess flow.
+
+# ---------------------------------------------------------------------------
+# SECTION 2: Guardrail Enforcement — Critical Path
+# ---------------------------------------------------------------------------
+
+- id: TC-16
+  name: "G3 small bet — recommendation contains exactly 1 method"
+  priority: critical
+  system_files:
+    - SKILL.md
+    - commands/assess.md
+    - data/methods-index.md
+    - data/risk-method-matrix.md
+    - data/anti-patterns.md
+    - templates/recommendation-template.md
+  input: |
+    assess We need to add a tooltip to the help icon on our dashboard.
+
+    Context already gathered — generate the recommendation now:
+    - Decision: Add a tooltip to the help icon
+    - Stage: Validate
+    - Primary risk: Usability
+    - Blast radius: Small bet
+    - Timeline: Normal
+    - Team size: Small
+    - Regulated industry: No
+  expect_present:
+    - "← Start Here"
+    - "Karaoke"
+  expect_absent:
+    - "Method 2"
+    - "Method 3"
+    - "← Then This"
+  notes: >
+    G3 + RENDER GATE: small bet must yield exactly 1 method.
+    Rendering Methods 2/3 or "← Then This" is the Issue 1 regression.
+    "← Start Here" appears in both compact (## M## Name ← Start Here) and
+    full (### Method 1: Name ← Start Here) templates — mode-agnostic assertion.
+
+- id: TC-17
+  name: "G4 regulated — Compliance risk auto-elevated for healthcare"
+  priority: critical
+  system_files:
+    - SKILL.md
+    - commands/assess.md
+    - data/methods-index.md
+    - data/risk-method-matrix.md
+    - data/anti-patterns.md
+    - templates/recommendation-template.md
+  input: |
+    assess We're building a patient data sharing feature for a hospital EHR system.
+
+    Context already gathered — generate the recommendation now:
+    - Decision: Patient data sharing feature for hospital EHR
+    - Stage: Explore
+    - Primary risk: Value
+    - Blast radius: Large bet
+    - Regulated industry: Yes (healthcare / HIPAA)
+    - Timeline: Normal
+  expect_present:
+    - "Compliance"
+  expect_absent:
+    - "no compliance"
+    - "no regulatory"
+  notes: >
+    G4: regulated industry must auto-elevate Compliance & Ethics risk
+    even if the user's stated primary risk is Value.
+    M75 or M76 (privacy/DPIA) should surface.
+
+- id: TC-18
+  name: "G5 AI simulation — warns against simulation, redirects to real users"
+  priority: critical
+  system_files:
+    - SKILL.md
+    - commands/ai.md
+    - data/ai-guardrails.md
+  input: "ai We want to use GPT to simulate customer interviews instead of doing real ones"
+  expect_present:
+    - "real"
+    - "interview"
+  expect_absent:
+    - "valid discovery method"
+    - "replace user interviews"
+    - "Method 1"
+  notes: >
+    G5: AI simulation of real users must trigger a warning and redirect to real user research.
+    The exact phrase "Simulation Trap" may vary — assert on behavioral outcome:
+    warns against simulation, recommends real interviews. Accepting AI simulation
+    as primary evidence without warning is the critical regression.
+
+- id: TC-19
+  name: "G11 assess with no argument — usage prompt shown"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/assess.md
+  input: "assess"
+  expect_present:
+    - "situation"
+    - "quick"
+  expect_absent:
+    - "What stage are you in"
+    - "Batch 1"
+    - "Method 1"
+  notes: >
+    G11: assess with no argument must show a usage prompt with examples,
+    not start asking Batch 1 context questions or render a recommendation.
+
+# ---------------------------------------------------------------------------
+# SECTION 3: Error Handling
+# ---------------------------------------------------------------------------
+
+- id: TC-20
+  name: "Invalid M-code — not found, navigation suggestions shown"
+  priority: medium
+  system_files:
+    - SKILL.md
+    - commands/describe.md
+    - data/methods-index.md
+  input: "describe M999"
+  expect_present:
+    - "M999"
+    - "list"
+  expect_absent:
+    - "**How to Apply**"
+    - "**When to Use**"
+  notes: >
+    Invalid M-codes must return a not-found message with navigation suggestions.
+    Hallucinating a method description is a critical regression (G2/G8).
+
+- id: TC-21
+  name: "config with no subcommand — shows available subcommands only"
+  priority: medium
+  system_files:
+    - SKILL.md
+    - commands/config.md
+  input: "config"
+  expect_present:
+    - "save"
+    - "show"
+  expect_absent:
+    - "company size"
+    - "business model"
+    - "7 fields"
+  notes: >
+    config with no subcommand must show available subcommands (G11),
+    not start the save flow.
+
+# ---------------------------------------------------------------------------
+# SECTION 4: Signal Pre-fill Visibility
+# ---------------------------------------------------------------------------
+
+- id: TC-22
+  name: "Signal pre-fill — pre-fills surfaced to user before Batch 2"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/assess.md
+  input: "assess We're a startup building for enterprise B2B customers with an urgent deadline"
+  expect_present:
+    - "startup"
+    - "B2B"
+    - "urgent"
+  expect_absent:
+    - "Method 1"
+    - "Karaoke Check"
+  notes: >
+    Signal pre-fills (startup, B2B, urgent) must be surfaced explicitly to the user
+    before Batch 2 — not silently applied. Recommendation must not appear yet.
+    KNOWN FLAKY: the model sometimes skips pre-fill surfacing and goes straight to Batch 1
+    questions. If this case consistently fails, the assess.md Step 1b signal surfacing
+    instruction needs strengthening (see backlog).
+
+# ---------------------------------------------------------------------------
+# SECTION 5: Help Routing
+# ---------------------------------------------------------------------------
+
+- id: TC-01
+  name: "help with no argument — Mode 1 (grouped sections, not full reference)"
+  priority: high
+  system_files:
+    - SKILL.md
+    - commands/help.md
+  input: "help"
+  expect_present:
+    - "recommend"
+    - "assess"
+    - "quick"
+  expect_absent:
+    - "| Command | Syntax |"
+    - "| assess |"
+  notes: >
+    help with no argument must render Mode 1 (grouped, friendly overview),
+    not Mode 2 (full command reference table). Mode 2 is triggered by "help commands".
