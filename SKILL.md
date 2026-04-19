@@ -1,6 +1,6 @@
 ---
 name: discovery-karaoke
-description: Stop doing Discovery Karaoke. Match discovery methods to risk — not habit. 13 commands: assess situations, plan full discovery arcs, browse 80 methods and tools, diagnose karaoke symptoms, review plans, and navigate AI product discovery. Based on The Thinking Lens.
+description: "Stop doing Discovery Karaoke. Match discovery methods to risk, not habit. 13 commands: assess situations, plan full discovery arcs, browse 80 methods and tools, diagnose karaoke symptoms, review plans, and navigate AI product discovery. Based on The Thinking Lens."
 argument-hint: "[command] [args]"
 disable-model-invocation: true
 license: CC BY-NC 4.0
