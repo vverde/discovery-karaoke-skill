@@ -1,10 +1,52 @@
 # Plan Template
 
-Use this template for the `plan` command. Full discovery arc across all remaining stages.
+Use this template for the `plan` command. Check `output_mode` before rendering:
+- **Compact mode** (default): use the Compact Template below
+- **Standard mode** (config `output_mode: standard` or `full` suffix): use the Full Template below
 
 ---
 
-## Template
+## Compact Template
+
+```
+# Discovery Plan: [Bet]
+
+[Bet] | [Risk] | [Starting Stage] | [Blast Radius] | [Key constraints]
+
+## Arc Summary
+
+| Stage | Method(s) | Decision Gate |
+|-------|-----------|---------------|
+| Explore | M## [Name] · M## [Name] | [Go signal — one phrase] |
+| Validate | M## [Name] · M## [Name] | [Go signal — one phrase] |
+| Optimize | M## [Name] | [Ongoing signal] |
+
+---
+
+## Decision Gates
+
+**Explore → Validate**: Go if [criterion] · Pivot if [criterion] · Kill if [criterion]
+**Validate → Optimize**: Go if [criterion] · Pivot if [criterion] · Kill if [criterion]
+
+---
+
+## ⚠️ [Anti-Pattern Name]
+[Default arc — 1 sentence.] [Why it's karaoke — 1 sentence.] [Why this plan is deliberate — 1 sentence.]
+
+---
+
+*Discovery plan, not a delivery plan. Kill/pivot signals are go/no-go checkpoints.*
+```
+
+**Compact rules:**
+- No per-stage Goal prose
+- No per-method How-to or What-you'll-learn
+- Decision Gates: inline one-liners, not tables
+- Karaoke Check: 3 sentences max
+
+---
+
+## Full Template
 
 ```
 # Discovery Plan: [Bet / Initiative]

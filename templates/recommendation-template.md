@@ -1,10 +1,56 @@
 # Recommendation Output Template
 
-Use this template when delivering discovery method recommendations. Adapt sections based on user context.
+Use this template when delivering discovery method recommendations. Check `output_mode` (config or `full` suffix) before rendering:
+- **Compact mode** (default): use the Compact Template below
+- **Standard mode** (config `output_mode: standard` or `full` suffix): use the Full Template below
 
 ---
 
-## Template
+## Compact Template
+
+```
+# [Decision — short label]
+
+[Decision] | [Stage] | [Risk] | [Blast Radius] | [Key constraints, one line]
+**Assumption**: [Primary assumption being tested]
+
+---
+
+## ⚠️ [Anti-Pattern Name]
+[Default move — 1 sentence.] [Why it fails — 1 sentence.] [Deliberate alternative — 1 sentence.]
+
+---
+
+## M## [Name] ← Start Here
+
+**Why**: [Fit — 1 sentence. What it unlocks — 1 sentence.]
+**Evidence**: [strength] | **Time**: [range] | **Cost**: [level]
+
+**Decision point**:
+- Go: [criterion]
+- Pivot: [criterion]
+- Kill: [criterion]
+
+**Companion tool**: M## [Name] — [one line]
+
+---
+
+`/discovery-karaoke describe M##` · `compare M## vs M##` · `plan [same situation]`
+```
+
+**Compact rules:**
+- No How-to-apply steps
+- No Evidence Convergence Map
+- No AI Acceleration table
+- No Anti-Patterns checklist
+- No Next Steps block
+- Karaoke Check: 3 sentences max (default move / why it fails / deliberate alternative)
+- Why-this-method: 2 sentences (fit + what it unlocks)
+- Decision point: 3 bullets (Go / Pivot / Kill), no prose
+
+---
+
+## Full Template
 
 ```
 # Discovery Recommendation: [User's Decision/Question]

@@ -1,10 +1,44 @@
 # Comparison Template
 
-Use this template for the `compare` command. Side-by-side analysis of two methods or tools.
+Use this template for the `compare` command. Check `output_mode` before rendering:
+- **Compact mode** (default): use the Compact Template below
+- **Standard mode** (config `output_mode: standard` or `full` suffix): use the Full Template below
 
 ---
 
-## Template
+## Compact Template
+
+```
+# [ID1: Name] vs [ID2: Name]
+
+| Dimension | [ID1] | [ID2] |
+|-----------|-------|-------|
+| **Risk** | [codes] | [codes] |
+| **Stage** | [stage] | [stage] |
+| **Time** | [range] | [range] |
+| **Cost** | [level] | [level] |
+| **Evidence** | [strength] | [strength] |
+| **User Access** | [level] | [level] |
+
+**Choose [ID1]**: [condition 1] · [condition 2]
+**Choose [ID2]**: [condition 1] · [condition 2]
+**Use both**: [when they sequence well — 1 line]
+
+⚠️ [ID1] karaoke risk: [1 sentence]
+⚠️ [ID2] karaoke risk: [1 sentence]
+
+*The right method depends on your risk and constraints.*
+```
+
+**Compact rules:**
+- Side-by-side table: always shown
+- Choose X: 2 conditions max (not 3), inline (not bullets)
+- Use both: 1 line
+- Karaoke risk: 1 sentence each
+
+---
+
+## Full Template
 
 ```
 # Compare: [ID1: Name] vs [ID2: Name]

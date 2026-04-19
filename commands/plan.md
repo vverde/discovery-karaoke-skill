@@ -64,7 +64,7 @@ Read `data/anti-patterns.md`. Evaluate the entire proposed sequence:
 
 ---
 
-**Step 5**: Read `templates/plan-template.md`. Arc Summary is rendered immediately after Context (before stage details), giving the user a one-glance view of the full arc. Then render stage details and Karaoke Check.
+**Step 5**: Check output_mode (config or `full` suffix). Read `templates/plan-template.md`. In compact mode: render Context + Arc Summary table + Decision Gates (inline) + Karaoke Check only. In standard mode: render Arc Summary immediately after Context, then full stage details and Karaoke Check.
 
 ---
 

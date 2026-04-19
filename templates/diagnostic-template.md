@@ -1,10 +1,43 @@
 # Diagnostic Template
 
-Use this template for the `diagnose` command. Interactive karaoke diagnostic scorecard.
+Use this template for the `diagnose` command. Check `output_mode` before rendering:
+- **Compact mode** (default): use the Compact Template below
+- **Standard mode** (config `output_mode: standard` or `full` suffix): use the Full Template below
 
 ---
 
-## Template
+## Compact Template
+
+```
+# Discovery Karaoke Diagnostic
+
+| # | Question | Score |
+|---|----------|-------|
+| 1–12 | [exact question text from data/anti-patterns.md] | [0–3] |
+
+**Total: [X] / 36 — [Band name]**
+[Band description — 1 sentence]
+
+## Top Patterns
+
+**[Anti-pattern name]** (Q[#], score [X]): [Recovery action — 1 sentence]
+**[Anti-pattern name]** (Q[#], score [X]): [Recovery action — 1 sentence]
+
+---
+
+`/discovery-karaoke review [plan]` · `assess [situation]` · Repeat quarterly
+```
+
+**Compact rules:**
+- Score table: always shown
+- Band: name + 1 sentence (no full description)
+- Top patterns: name + source question + 1-sentence recovery only
+- No 30-min exercise prose (replace with command suggestions)
+- Max 2 anti-patterns surfaced
+
+---
+
+## Full Template
 
 ```
 # Discovery Karaoke Diagnostic

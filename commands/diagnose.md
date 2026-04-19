@@ -20,10 +20,6 @@ Frame the instrument as it is labelled in the file: *"a reflective heuristic, no
 
 **Step 3**: Map the highest-scoring questions to their corresponding **named anti-patterns** from `data/anti-patterns.md`. Each question corresponds to a specific pattern — identify them by name.
 
-**Step 4**: Read `templates/diagnostic-template.md`. Deliver output using that card structure exactly:
-- Score and interpretation band
-- Top anti-patterns triggered — named, with their specific recovery actions from the file
-- The 30-minute exercise from the `## Recovery` section
-- Next commands to run
+**Step 4**: Check output_mode (config or `full` suffix). Read `templates/diagnostic-template.md`. Deliver output using the Compact Template if output_mode is `compact`, Full Template if `standard` or `full` suffix was used. Full mode includes: score table, interpretation band, top anti-patterns with recovery actions, 30-minute exercise, next commands.
 
 **Tone**: Non-judgmental, recovery-oriented. Never blame. Frame as "here's where defaults may have crept in."

@@ -120,7 +120,7 @@ Scan the situation description for recognizable signals and pre-fill the corresp
 9. G4 compliance check: if regulated or AI/data-sensitive, surface M75/M76 or M89/M91 as early as Explore
 10. G5 AI opportunities: read `data/ai-guardrails.md` for relevant acceleration notes
 
-**Step 4**: Read `templates/recommendation-template.md`. Deliver output using that card structure exactly.
+**Step 4**: Check output_mode (config or `full` suffix). Read `templates/recommendation-template.md`. Deliver output using the Compact Template if output_mode is `compact`, Full Template if `standard` or `full` suffix was used.
 
 **Step 5: Offer follow-up**:
 - `/discovery-karaoke describe M##` — deep-dive on any recommended method

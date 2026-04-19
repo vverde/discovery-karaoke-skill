@@ -24,7 +24,7 @@
 
 **Step 3**: For each karaoke symptom found, **name the specific anti-pattern** from `data/anti-patterns.md`. Do not use generic descriptions.
 
-**Step 4**: Read `templates/review-template.md`. Deliver output using that card structure exactly.
+**Step 4**: Check output_mode (config or `full` suffix). Read `templates/review-template.md`. Deliver output using the Compact Template if output_mode is `compact`, Full Template if `standard` or `full` suffix was used.
 
 **Step 5: Offer follow-up**:
 - `/discovery-karaoke assess [situation]` — get a fresh method recommendation for the same situation

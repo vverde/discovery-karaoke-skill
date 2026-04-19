@@ -1,10 +1,47 @@
 # Review Template
 
-Use this template for the `review` command. Evaluates an existing discovery plan for karaoke symptoms.
+Use this template for the `review` command. Check `output_mode` before rendering:
+- **Compact mode** (default): use the Compact Template below
+- **Standard mode** (config `output_mode: standard` or `full` suffix): use the Full Template below
 
 ---
 
-## Template
+## Compact Template
+
+```
+# Plan Review: [Plan summary — one line]
+
+## Symptom Check
+
+| # | Symptom | Status |
+|---|---------|--------|
+| 1 | Methods matched to specific risks? | [Pass/Flag] |
+| 2 | Evidence threshold matches blast radius? | [Pass/Flag] |
+| 3 | Generative AND evaluative methods used? | [Pass/Flag] |
+| 4 | Compliance & Ethics as first-class risk? | [Pass/Flag] |
+| 5 | Decision criteria defined before research starts? | [Pass/Flag] |
+| 6 | AI used as accelerator, not replacement? | [Pass/Flag] |
+
+**Overall**: [Deliberate / Mild karaoke / Significant karaoke / Full karaoke] — [1 sentence]
+
+## Top Adjustments
+
+1. [Swap X for Y — 1 sentence reason]
+2. [Second adjustment if needed]
+
+`/discovery-karaoke assess [situation]` · `plan [situation]`
+```
+
+**Compact rules:**
+- No "What's Working Well" section
+- No "Specific Observations" detailed prose
+- Symptom checklist: status only (no Notes column)
+- Overall Health: band + 1 sentence
+- Adjustments: max 2 bullets, 1 sentence each
+
+---
+
+## Full Template
 
 ```
 # Discovery Plan Review

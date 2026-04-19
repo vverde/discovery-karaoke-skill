@@ -102,9 +102,11 @@ Every recommendation output (assess, quick, review) must include a karaoke check
 - Config NEVER stores risk, stage, or past recommendations
 - On every load: show the pre-filled values and ask the user to confirm or adjust — this is the staleness check; no separate age-based warning is needed
 
-**Output mode** (read from config, default `standard` if not set):
-- `compact` — short form by default; `full` suffix unlocks full output per command
+**Output mode** (read from config, default `compact` if not set):
+- `compact` — short form by default; append `full` to any command to get standard output (e.g. `assess full We're adding SSO`, `plan full …`, `diagnose full`, `compare M1 vs M23 full`)
 - `standard` — full output by default; behavior matches current templates
+
+**`full` suffix rule**: Any output command (`assess`, `plan`, `review`, `diagnose`, `compare`, `describe`, `list`) accepts an optional `full` suffix that forces standard mode regardless of config. Strip the suffix before processing the remaining argument.
 
 ### G8: Data Integrity
 - NEVER modify files in `data/` or `templates/` or `commands/`

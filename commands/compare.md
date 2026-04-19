@@ -15,7 +15,7 @@
 
 **Step 1**: Read both entries from `data/methods-index.md` to build the side-by-side metadata table. Then read both full entries from `data/discovery-methods-full.md` for the "When to Choose Each" and Karaoke Check prose.
 
-**Step 2**: Read `templates/comparison-template.md`. Deliver output using that card structure exactly.
+**Step 2**: Check output_mode (config or `full` suffix). Read `templates/comparison-template.md`. Deliver output using the Compact Template if output_mode is `compact`, Full Template if `standard` or `full` suffix was used.
 
 **Step 3 — Constrained default** *(after delivering the card)*:
 If a saved config exists (`.discovery-karaoke-config.yml`) or constraints are clearly inferable from the situation context, add a single closing line:
