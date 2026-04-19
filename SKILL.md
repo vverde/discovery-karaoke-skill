@@ -258,11 +258,19 @@ Method sections in `data/discovery-methods-full.md` use the heading format `## M
 
 ## Changelog
 
+### 1.1.0 — 2026-04-19
+- Compact output mode: default changed to `compact`; `full` suffix added to all output commands
+- Prose density rules added to Tone section (2-sentence cap, no restatement, karaoke check max 3 sentences)
+- Compact Template added to all 5 output templates (recommendation, plan, review, diagnostic, comparison)
+- Method/tool counts corrected everywhere: 67 methods + 13 context tools (was 69+11 — M60 and M78 are Operating Practices, not Methods)
+- data/about.md: category table corrected to match index (Generative 17, Evaluative 18, Experimentation 15, Analytics 7, Compliance 9, Strategic Framing 1); AI Feasibility row removed (not an index category); web app URL updated
+- README rewritten for skill repo (replaced web app content)
+
 ### 1.0.0 — 2026-04-18 (Initial stable release)
 - 13 commands: assess, quick, plan, ai, list, describe, compare, matrix, diagnose, review, config, about, help (+ answer via smart fallback)
-- 80 active methods (M1–M96, non-contiguous): 67 methods + 13 context tools
+- 80 active entries (M1–M96, non-contiguous): 67 methods + 13 context tools
 - 12 named anti-patterns + 36-point diagnostic
 - 11 guardrails (G1–G11)
-- Signal-based pre-fill, config file support, compact/standard output modes
+- Signal-based pre-fill, config file support
 
 **Breaking change policy**: Increment to 2.0.0 for: removing a command, renaming a guardrail ID (G1–G11), changing a data file schema (methods-index.md columns, anti-patterns.md diagnostic format). Increment to 1.x.0 for: adding commands, new guardrails, data additions. Wording and template fixes do not require a version bump.

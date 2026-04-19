@@ -54,18 +54,18 @@ Tie the evidence bar to the size of the bet:
 
 ## The Toolkit
 
-**80 Discovery Methods** (M1–M96, 80 Active, 3 Superseded):
+**80 active entries** (M1–M96, 67 methods + 13 context tools, 3 Superseded):
 
 Evidence-generating activities. Each entry includes: Risk, Stage, Business Model Fit, User Access Required, Time, Cost Level, Evidence Strength, When to Use, When NOT to Use, Karaoke Check, AI Augmentation.
 
 | Category | Count | Examples |
 |----------|-------|---------|
-| Generative | 15 | User Interviews (M1), JTBD Interviews (M2), Contextual Inquiry (M3), Diary Studies (M5), Continuous Interviewing (M60) |
-| Evaluative | 19 | Usability Testing (M16/M17), Card Sorting (M13), Conjoint Analysis (M69), Usability Benchmarking (M73) |
-| Experimentation | 14 | Fake Door Test (M23), Landing Page Test (M24), Concierge MVP (M26), Beta Testing (M72) |
-| Analytics | 5 | Cohort Analysis (M55), Funnel Analysis (M56), Session Recordings (M58), Heatmaps (M59) |
-| Compliance & Ethics | 10 | Data-flow Mapping (M75), DPIA/PIA (M76), AI Red Teaming (M81), Fairness Assessment (M80) |
-| AI Feasibility | 3 | Capability Contract Workshop (M89), AI Capability Assessment (M90), Data Readiness Assessment (M91) |
+| Generative | 17 | User Interviews (M1), JTBD Interviews (M2), Contextual Inquiry (M3), Diary Studies (M5), Churn Interviews (M92) |
+| Evaluative | 18 | Usability Testing (M16/M17), Card Sorting (M13), Conjoint Analysis (M69), Usability Benchmarking (M73) |
+| Experimentation | 15 | Fake Door Test (M23), Landing Page Test (M24), Concierge MVP (M26), Beta Testing (M72) |
+| Analytics | 7 | Cohort Analysis (M55), Funnel Analysis (M56), Feature Audit (M57), Session Recordings (M58) |
+| Compliance | 9 | Data-flow Mapping (M75), DPIA/PIA (M76), AI Red Teaming (M81), Fairness Assessment (M80) |
+| Strategic Framing | 1 | Competitive Analysis (M42) |
 
 **13 Context Tools** (M-coded frameworks, synthesis tools, and operating practices):
 
@@ -128,7 +128,7 @@ https://www.the-thinking-lens.com/stop-doing-discovery-karaoke/
 **Methods** sourced from established product discovery literature:
 Teresa Torres, Marty Cagan, Jake Knapp, Jeff Gothelf, Erika Hall, Carolyn Snyder, Eric Ries, and others.
 
-**Web app**: https://vverde.github.io/discovery-karaoke-engine/
+**Web app**: https://discovery.the-thinking-lens.com
 
 ---
 

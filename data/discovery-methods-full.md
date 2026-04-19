@@ -59,7 +59,7 @@ This file is the **editorial master layer**. It is intentionally optimised for h
 - The web app filter model. The parser derives `primary_risk` (first value in Risk Addressed) and `primary_stage` (first value in Discovery Stage) for ranking – these are not explicit fields here
 
 **Derived assets (do not edit directly – regenerate from this file):**
-- `data.js` – parsed JSON for the web app (vverde.github.io/discovery-karaoke-engine/)
+- `data.js` – parsed JSON for the web app (discovery.the-thinking-lens.com)
 - `SKILL.md` – Claude Code skill, filtered to Active methods with practitioner guidance
 
 **Generation pipeline:**
