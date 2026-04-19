@@ -12,7 +12,7 @@ A Claude Code skill that helps product teams pick the right discovery method for
 ## Install
 
 ```bash
-npx @anthropic-ai/claude-code skills add [username]/discovery-karaoke-skill
+npx @anthropic-ai/claude-code skills add vverde/discovery-karaoke-skill
 ```
 
 Or install manually: copy the repo contents into `~/.claude/skills/discovery-karaoke/`.
