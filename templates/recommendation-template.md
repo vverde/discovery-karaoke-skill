@@ -169,7 +169,6 @@ Use this template when delivering discovery method recommendations. Check `outpu
 
 ---
 
-*Framework: The Thinking Lens — "Stop Doing Discovery Karaoke" | the-thinking-lens.com*
 ```
 
 ---
@@ -189,7 +188,7 @@ Use this template when delivering discovery method recommendations. Check `outpu
 
 Before delivering any recommendation, verify:
 
-- [ ] **G1**: Attribution line included at the bottom
+- [ ] **G1**: No attribution line in output (attribution in `about` only)
 - [ ] **G2**: Every method tied to a specific risk (no "just try this")
 - [ ] **G3**: Number of method slots rendered matches blast radius (1 for small, 2 for medium, 3 for large with two active risk types only). Did you render Method 3? If blast radius is not Large with two active risk types, remove it.
 - [ ] **G4**: Compliance & Ethics addressed if regulated industry or data/privacy/AI involved

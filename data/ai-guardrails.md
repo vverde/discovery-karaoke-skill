@@ -1,22 +1,5 @@
 # AI in Discovery: Guardrails & Opportunities
 
-<!--
-version: 2.0
-last_updated: 2026-04-12
-status: Production
-
-changelog:
-  2.0 (2026-04-12): Full rewrite. New section: AI in AI Product Discovery (Special Case) —
-    covering LLM-as-judge nuance (Zheng et al. 2023), M89→M91→M90 sequence rule, EU AI Act
-    timing note (April 2026 state), compliance taxonomy split (legal regimes: GDPR/EU AI Act/HIPAA
-    vs. attestation frameworks: SOC 2/ISO 27001). Three overclaims softened: usability testing,
-    market validation, AI capability confirmation. Regulatory risk flagging row split into two
-    rows. Heatmap + churn analysis rows added. All M-codes verified (no T-codes). Five anchor
-    citations added (NIST AI 600-1, EU AI Act, NN/g, Zheng et al., AICPA SOC 2).
-  1.0 (2026-04-09): Initial version. Basic can/cannot tables. No M-codes. No AI product
-    discovery section. No citations.
--->
-
 > **Core principle**: AI compresses time to signal. It NEVER replaces real user signal.
 > AI-simulated feedback is a hypothesis accelerator, not evidence.
 >

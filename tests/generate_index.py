@@ -4,7 +4,7 @@ generate_index.py — Generate data/methods-index.md from data/discovery-methods
 
 Generated file : data/methods-index.md
 Source         : data/discovery-methods-full.md
-Run            : python3 local/generate_index.py  (from skill root)
+Run            : python3 tests/generate_index.py  (from skill root)
 
 Do not edit methods-index.md manually — regenerate from source when the DB changes.
 """
@@ -157,7 +157,7 @@ def render_index(entries: list[dict]) -> str:
 
 > **Generated file — do not edit manually.**
 > Source: `data/discovery-methods-full.md`
-> Regenerate: `python3 local/generate_index.py` (run from skill root)
+> Regenerate: `python3 tests/generate_index.py` (run from skill root)
 > Last generated: {today}
 >
 > {count} active entries. Superseded methods excluded.
@@ -179,7 +179,7 @@ def main() -> None:
     if not SOURCE.exists():
         print(f"Error: {SOURCE} not found.")
         print("Run this script from the skill root directory:")
-        print("  cd ~/Projects/discovery-karaoke-skill && python3 local/generate_index.py")
+        print("  cd ~/Projects/discovery-karaoke-skill && python3 tests/generate_index.py")
         return
 
     text    = SOURCE.read_text(encoding="utf-8")

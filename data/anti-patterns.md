@@ -1,24 +1,5 @@
 # Discovery Karaoke: Anti-Patterns & Warning Signs
 
-<!--
-version: 2.2
-last_updated: 2026-04-14
-status: Production
-
-changelog:
-  2.2 (2026-04-14): 12 patterns. Including the Validation Theater.
-  2.1 (2026-04-12): Internal file references replaced with generic names for skill consumption.
-    Self-referential framing sentences removed.
-  2.0 (2026-04-11): Full rewrite. 11 patterns (up from 9). Analytics Anchor replaces Metrics
-    Obsession. Compliance Afterthought added (Compliance & Ethics risk now represented).
-    Viability Skip added (Viability risk now represented — all five risks covered). All
-    M-codes updated (no T-codes). M63 dangling reference removed. Six editorial fixes:
-    overclaims softened, DPIA triage language tightened to ICO recommendation, diagnostic
-    labelled as heuristic not validated instrument.
-  1.0 (2026-04-09): Initial version. 9 patterns. T-codes throughout. No Compliance or
-    Viability anti-patterns.
--->
-
 > "Familiar ≠ fit-for-purpose. Default ≠ deliberate."
 >
 > Discovery is a decision engine. Its job is to reduce uncertainty so teams can move faster, with more confidence. Anti-patterns are what happen when method selection runs on habit instead of risk.

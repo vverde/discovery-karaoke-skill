@@ -14,11 +14,11 @@ characteristics. NOT run on every commit — run manually before releases or
 when SKILL.md, a command file, or a template changes.
 
 Usage:
-    uv run local/golden_eval.py                       # run all cases (recommended)
-    uv run local/golden_eval.py --case TC-16          # run single case
-    uv run local/golden_eval.py --dry-run             # show prompts, no API call
-    uv run local/golden_eval.py --verbose             # show full model responses
-    uv run local/golden_eval.py --priority critical   # critical cases only (~$0.05)
+    uv run tests/golden_eval.py                       # run all cases (recommended)
+    uv run tests/golden_eval.py --case TC-16          # run single case
+    uv run tests/golden_eval.py --dry-run             # show prompts, no API call
+    uv run tests/golden_eval.py --verbose             # show full model responses
+    uv run tests/golden_eval.py --priority critical   # critical cases only (~$0.05)
 
 Cost estimate (claude-haiku-4-5): ~$0.002–0.005 per case. Full suite: ~$0.03.
 """
@@ -37,7 +37,7 @@ import yaml
 # ---------------------------------------------------------------------------
 
 SKILL_ROOT = Path(__file__).parent.parent
-CASES_FILE = SKILL_ROOT / "local/golden-cases.yaml"
+CASES_FILE = SKILL_ROOT / "tests/golden-cases.yaml"
 MODEL = "claude-haiku-4-5-20251001"
 MAX_TOKENS = 1500
 

@@ -1,48 +1,23 @@
 # Risk-Method Matrix
 
-<!--
-version: 2.1
-last_updated: 2026-04-12
-status: Production
-
-changelog:
-  2.1 (2026-04-12): Context Tools Index corrected. M31 (Design Sprint) removed — has no Context
-    Tool Note in DB; it is a method. M42 (Competitive Analysis) and M89 (Capability Contract
-    Workshop) added — both have Context Tool Note in DB. Index now lists 11 tools, matching DB.
-  2.0 (2026-04-12): Full rewrite. All expanded section cells trimmed to 2–3 methods (was 6–17).
-    All T-codes replaced with M-codes throughout. M43 (deprecated) and phantom
-    "Synthetic User Research (AI)" row removed. M92–M96 added to Complete Method Index.
-    Thinking Tools Pairing tables (5 scattered tables) and Decision Tree removed — redundant
-    given other navigation. Thinking Tools Index renamed to Context Tools Index; active
-    methods only (M31, M32, M33, M35, M36, M37, M38, M39, M64, M88). Method count note
-    removed; discovery-methods-full.md is authoritative.
-  1.3 (2026-04-10/11): Compliance Explore corrected; B2B/B2C context flags added to top matrix.
-    Matrix refs updated after T42 rename.
-  1.2 (2026-04-10): T42 renamed from T-NEW; matrix references updated.
-  1.1 (2026-04-09): Visual 5×3 grid header added. Top 2 methods per cell for fast scanning.
-    Full lists, constraint filters, and pairings retained in expanded sections.
-  1.0 (2026-04-09): Initial version. 52-method matrix with T-codes. Thinking Tools Pairing
-    tables + Decision Tree included. Cells with 6–17 methods each.
--->
-
 > Quick-reference: **Risk × Stage → Top Methods**. Pick your risk, find your stage, start there.
 
 ---
 
 ## The Matrix
 
-| Risk | **Explore** | **Validate** | **Optimize** |
-|---|---------|--------------|--------------|
-| **Value / Desirability** | M1 User Interviews | M23 Fake Door Test | M20 A/B Testing |
-| *Will they want this?* | M2 JTBD Interviews | M48 Pre-sales / LOI `B2B` | M55 Cohort Analysis |
-| **Usability** | M3 Contextual Inquiry `B2B` | M16 Usability Testing (Mod) | M58 Session Recordings |
-| *Can they use it?* | M66 Shadowing `B2B` | M18 Heuristic Review | M59 Heatmap Analysis |
-| **Feasibility** | M9 Stakeholder Interviews | M44 Spike Solution | M68 Dogfooding |
-| *Can we build it?* | M89 Capability Contract `AI` | M45 Proof of Concept | M72 Beta Testing |
-| **Viability** | M8 Sales Call Analysis `B2B` | M48 Pre-sales / LOI `B2B` | M56 Funnel Analysis |
-| *Does it work for the business?* | M42 Competitive Analysis | M24 Landing Page Test `B2C` | M57 Feature Audit |
-| **Compliance & Ethics** | M75 Data-flow Mapping | M19 Accessibility Audit | M82 Post-market Monitoring |
-| *First-class risk* | M76 DPIA / PIA | M81 AI Red Teaming | M57 Feature Audit *(compliance)* |
+| Risk                             | **Explore**                  | **Validate**                | **Optimize**                     |
+| -------------------------------- | ---------------------------- | --------------------------- | -------------------------------- |
+| **Value / Desirability**         | M1 User Interviews           | M23 Fake Door Test          | M20 A/B Testing                  |
+| *Will they want this?*           | M2 JTBD Interviews           | M48 Pre-sales / LOI `B2B`   | M55 Cohort Analysis              |
+| **Usability**                    | M3 Contextual Inquiry `B2B`  | M16 Usability Testing (Mod) | M58 Session Recordings           |
+| *Can they use it?*               | M66 Shadowing `B2B`          | M18 Heuristic Review        | M59 Heatmap Analysis             |
+| **Feasibility**                  | M9 Stakeholder Interviews    | M44 Spike Solution          | M68 Dogfooding                   |
+| *Can we build it?*               | M89 Capability Contract `AI` | M45 Proof of Concept        | M72 Beta Testing                 |
+| **Viability**                    | M8 Sales Call Analysis `B2B` | M48 Pre-sales / LOI `B2B`   | M56 Funnel Analysis              |
+| *Does it work for the business?* | M42 Competitive Analysis     | M24 Landing Page Test `B2C` | M57 Feature Audit                |
+| **Compliance & Ethics**          | M75 Data-flow Mapping        | M19 Accessibility Audit     | M82 Post-market Monitoring       |
+| *First-class risk*               | M76 DPIA / PIA               | M81 AI Red Teaming          | M57 Feature Audit *(compliance)* |
 
 ---
 
